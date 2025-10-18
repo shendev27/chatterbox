@@ -17,20 +17,22 @@ export default function RoomInterface() {
         <Link href="/join-room">
           <button
             onClick={handleJoinRoom}
-            className="w-full group relative overflow-hidden rounded-2xl bg-white px-12 py-15 text-5xl font-light text-gray-800 shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] active:scale-[0.98]"
+            className="w-full group relative overflow-hidden rounded-2xl bg-white px-12 py-12 text-5xl font-light text-gray-800 shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] active:scale-[0.98]"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-indigo-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
             <span className="relative">Join Room</span>
           </button>
         </Link>
 
-        <button
-          onClick={handleCreateRoom}
-          className="mt-20 w-full group relative overflow-hidden rounded-2xl bg-white px-12 py-15 text-5xl font-light text-gray-800 shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] active:scale-[0.98]"
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-violet-50 to-purple-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-          <span className="relative">Create Room</span>
-        </button>
+        <Link href="/create-room">
+          <button
+            onClick={handleCreateRoom}
+            className="mt-20 w-full group relative overflow-hidden rounded-2xl bg-white px-12 py-12 text-5xl font-light text-gray-800 shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] active:scale-[0.98]"
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-violet-50 to-purple-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+            <span className="relative">Create Room</span>
+          </button>
+        </Link>
       </div>
     </div>
   );
