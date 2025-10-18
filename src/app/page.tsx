@@ -1,24 +1,28 @@
 "use client";
 
+import Link from "next/link";
+
 export default function RoomInterface() {
   const handleJoinRoom = (): void => {
-    console.log('Join Room clicked');
+    console.log("Join Room clicked");
   };
 
   const handleCreateRoom = (): void => {
-    console.log('Create Room clicked');
+    console.log("Create Room clicked");
   };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-8">
       <div className="w-full max-w-md space-y-6">
-        <button
-          onClick={handleJoinRoom}
-          className="w-full group relative overflow-hidden rounded-2xl bg-white px-12 py-15 text-5xl font-light text-gray-800 shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] active:scale-[0.98]"
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-indigo-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-          <span className="relative">Join Room</span>
-        </button>
+        <Link href="/join-room">
+          <button
+            onClick={handleJoinRoom}
+            className="w-full group relative overflow-hidden rounded-2xl bg-white px-12 py-15 text-5xl font-light text-gray-800 shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] active:scale-[0.98]"
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-indigo-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+            <span className="relative">Join Room</span>
+          </button>
+        </Link>
 
         <button
           onClick={handleCreateRoom}
