@@ -1,5 +1,11 @@
-import CreateRoom from '@/components/createRoom';
+import CreateRoom from "@/components/createRoom";
+import NavigationBar from "@/components/navigationBar";
 
 export default function CreateRoomPage() {
-  return <CreateRoom />;
+  return (
+    <>
+      <NavigationBar />
+      <CreateRoom />
+    </>
+  );
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, KeyboardEvent } from "react";
+import NavigationBar from "@/components/navigationBar";
 
 export default function JoinRoom() {
   const [code, setCode] = useState(["", "", "", "", "", ""]);
@@ -49,6 +50,8 @@ export default function JoinRoom() {
   const isCodeComplete = code.every((digit) => digit !== "");
 
   return (
+    <>
+    <NavigationBar />
     <div className="min-h-screen bg-[#F2F2F2] flex items-center justify-center p-4">
       <div className="bg-[#D3D3D3] rounded-3xl p-16 shadow-lg max-w-2xl w-full">
         <div className="flex flex-col items-center space-y-12">
@@ -89,5 +92,6 @@ export default function JoinRoom() {
         </div>
       </div>
     </div>
+    </>
   );
 }
