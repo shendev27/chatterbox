@@ -17,7 +17,7 @@ export default function RoomInterface() {
       <NavigationBar />
       <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-8">
         <div className="w-full max-w-md space-y-6">
-          <Link href="/join-room" legacyBehavior>
+          <Link href="/join-room">
             <button
               onClick={handleJoinRoom}
               className="w-full group relative overflow-hidden rounded-2xl bg-white px-12 py-12 text-5xl font-light text-gray-800 shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] active:scale-[0.98]"
@@ -27,7 +27,7 @@ export default function RoomInterface() {
             </button>
           </Link>
 
-          <Link href="/create-room" legacyBehavior>
+          <Link href="/create-room">
             <button
               onClick={handleCreateRoom}
               className="mt-20 w-full group relative overflow-hidden rounded-2xl bg-white px-12 py-12 text-5xl font-light text-gray-800 shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] active:scale-[0.98]"
